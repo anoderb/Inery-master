@@ -77,8 +77,11 @@ nano config.json
 ```
 
 AccountName = Ganti dengan nama akunmu
+
 PublicKey = Ganti dengan Public key yang ada diweb
+
 PrivateKey = Ganti dengan Private key mu
+
 IP = Ganti dengan IP address atau DNS 
 
 Save (ctrl+S), lalu "Y" dan exit (ctrl+X)
