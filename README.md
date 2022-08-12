@@ -96,10 +96,10 @@ Save (ctrl+S), lalu "Y" dan exit (ctrl+X)
 Tunggu sampai singkronisasi selesai 
 
 ## 8. Jalankan Node
-Buka direktori lite.node Lokasi : `cd root/inery-node/inery.setup/lite.node/` dan jalankan skrip ./start.sh
+Buka direktori lite.node Lokasi : `cd root/inery-node/inery.setup/master.node/` dan jalankan skrip ./start.sh
 Buka Tab baru atau Tab Lain, Jalankan
 ```
-cd ~/inery-node/inery.setup/lite.node/
+cd ~/inery-node/inery.setup/master.node/
 ```
 ```
 chmod +x start.sh
