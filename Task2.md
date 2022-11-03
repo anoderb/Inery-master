@@ -7,20 +7,12 @@
 
 ## 1. BUKA KUNCI WALLET
 
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/198816800-27bf9ff4-4210-4bd6-9153-4eb92ed8cee0.jpg">
-</p>
-
 ```
 cline wallet unlock -n YourWalletName
 ```
 **YourWalletName** = Nama Wallet Akun Kalian | Jika Wallet Locked Pastikan kalian Memiliki Password Wallet Yang Berada di Dalam `file.txt` Untuk Membukanya
 
 ## 2. BUAT ABI & WASM
-
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/198816799-6ebac5f0-c8c8-458e-af0b-f8db69008577.PNG">
-</p>
 
 ```
 cline get code inery.token -c token.wasm -a token.abi --wasm
@@ -29,13 +21,6 @@ Paste Saja Langsung Perintah di Atas, Tanpa di Edit
 
 ## 3. SET CODE AKUN
 
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/198816796-d2d5f5f2-9af9-490a-bfc2-4ade637cb68f.jpg">
-</p>
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/198816801-1a484a4e-ccbe-48f4-8209-aeecaa642798.JPG">
-</p>
-
 **YourAccountName** = Ganti Dengan Nama Node Kalian
 
 ```
@@ -43,10 +28,6 @@ cline set code -j YourAccountName token.wasm
 cline set abi YourAccountName token.abi
 ```
 ## 4. CREATE TOKEN BARU
-
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/198817770-d96673bc-a40e-4c59-88c3-0f9aa5dc49ab.jpg">
-</p>
 
 ```
 cline push action inery.token create '["YourAccountName", "Supply CurrencyCode"], "token description/memo"' -p YourAccountName
@@ -60,9 +41,6 @@ cline push action inery.token create '["noderb", "50000.0000 CPI"], "Gratis Ongk
 
 ## 5. ISSUE NEW TOKEN
 
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/198817771-d5528c04-32e8-4d6a-83b7-57da8ebd3c25.jpg">
-</p>
 
 ```
 cline push action inery.token issue '["YourAccountName", "Supply CurrencyCode", "detail"]' -p YourAccountName
@@ -76,10 +54,6 @@ cline push action inery.token issue '["noderb", "50000.0000 CPI", "Gratis Ongkir
 - Buat Symbol Token Bebas dan Deskripsi Bebas dan Supply Coin Samain Aja
 
 ## 6. SEND TOKEN MIN 10 TRANSAKSI ATAU LEBIH KE AKUN ORANG LANGSUNG SAJA PAKE SCRIPT DI BAWAH CUMA EDIT DULU
-
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/198817767-d2e003e3-2d14-4d02-a2d5-453477a8ec5c.jpg">
-</p>
 
 Yang Harus di Edit
 
@@ -107,9 +81,6 @@ cline push action inery.token transfer '["YourAccountName", "blacktokyoo", "1.00
 cline push action inery.token transfer '["noderb", "inery", "1.0000 CPI", "Gua Lagi baek Nih Bro"]' -p noderb
 ```
 
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/198817998-f96c323e-223e-46df-9b95-8ff24a3a3067.JPG">
-</p>
 
 Kalo Udeh, Baru Lu Balik Lagi ke Situs Testnetnya, Klik FINISH dan Tunggu Sampai Review Selesai. Jika di Terima Nanti Akan Terlihat Seperti SS di Atas
 
